@@ -1,0 +1,43 @@
+{
+  "name": "test-npm",
+  "version": "1.0.2",
+  "description": "",
+  "main": "lib/index.js",
+  "bin": {
+    "aaa-build": "./bin/build.js"
+  },
+  "scripts": {
+    "build": "rollup -c && node bin/build.js browser"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/umijs/father"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.0",
+    "rollup-plugin-less-modules": "^0.1.11",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/plugin-transform-runtime": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "autoprefixer": "^10.4.0",
+    "chalk": "2.4.2",
+    "core-js": "^3.19.3",
+    "postcss": "^8.4.5",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "signale": "^1.4.0",
+    "update-notifier": "^5.1.0",
+    "yargs-parser": "^21.0.0"
+  }
+}
