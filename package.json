@@ -1,14 +1,17 @@
 {
-  "name": "test-npm-zt",
+  "name": "test-npm",
   "version": "1.0.2",
   "description": "",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
+  "bin": {
+    "aaa-build": "./bin/build.js"
+  },
   "scripts": {
-    "build": "rollup -c "
+    "build": "rollup -c && node bin/build.js browser"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/ztt99/tezt-zt-demo-npm" 
+    "url": "http://github.com/umijs/father"
   },
   "keywords": [],
   "author": "",

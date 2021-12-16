@@ -1,4 +1,8 @@
-const config = 99999
+import "./index.less";
+
+const config = 99999;
 export const a = () => {
-  return config
-}
+  return config;
+};
+
+export default a;
