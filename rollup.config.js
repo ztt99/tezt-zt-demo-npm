@@ -6,7 +6,7 @@ import { terser } from 'rollup-plugin-terser'
 import typescript from '@rollup/plugin-typescript'
 import postcss from 'postcss'
 import autoprefixer from 'autoprefixer'
-import lessModules from 'rollup-plugin-less-modules'
+// import lessModules from 'rollup-plugin-less-modules'
 import serve from 'rollup-plugin-serve'
 
 const processor = (code, id) => {
@@ -56,11 +56,11 @@ export default [
         runtimeHelpers: true, // 使plugin-transform-runtime生效
       }),
       terser(),
-      lessModules({
-        output: 'dist/index.css',
-        options: { sourceMap: {} },
-        processor,
-      }),
+      // lessModules({
+      //   output: 'dist/index.css',
+      //   options: { sourceMap: {} },
+      //   processor,
+      // }),
     ],
   },
 ]

@@ -2,12 +2,9 @@
   "name": "test-npm-zt",
   "version": "1.0.2",
   "description": "",
-  "main": "lib/index.js",
-  "bin": {
-    "aaa-build": "./bin/build.js"
-  },
+  "main": "dist/index.js",
   "scripts": {
-    "build": "rollup -c && node bin/build.js browser"
+    "build": "rollup -c "
   },
   "repository": {
     "type": "git",
